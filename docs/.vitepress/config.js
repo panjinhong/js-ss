@@ -25,7 +25,7 @@ function sidebar() {
 
 export default defineConfig({
   title: "JS-SS",
-  description: "各种js手撕",
+  description: "记录各种js手撕",
 
   lastUpdated: true,
   lastUpdatedText: "最后更新",
@@ -36,6 +36,16 @@ export default defineConfig({
     theme: "vitesse-dark",
     lineNumbers: true,
   },
+
+  head: [
+    [
+      'link', {
+        rel: "icon",
+        type: "image/png",
+        href: "/logo.png"
+      },
+    ]
+  ],
 
   themeConfig: {
     nav: [],
