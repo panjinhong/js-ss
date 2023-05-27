@@ -1,4 +1,5 @@
 import fs from "fs";
+import { defineConfig } from "vitepress";
 
 function generateSidebar() {
   try {
@@ -12,9 +13,6 @@ function generateSidebar() {
   
 }
 
-generateSidebar();
-
-
 function sidebar() {
   return [
     {
@@ -25,11 +23,19 @@ function sidebar() {
   ]
 }
 
-export default {
+export default defineConfig({
   title: "JS-SS",
   description: "各种js手撕",
+
   lastUpdated: true,
+  lastUpdatedText: "最后更新",
+  
   cleanUrls: true,
+
+  markdown: {
+    theme: "vitesse-dark",
+    lineNumbers: true,
+  },
 
   themeConfig: {
     nav: [],
@@ -48,5 +54,16 @@ export default {
       pattern: 'https://github.com/panjinhong/js-ss/tree/master/docs/:path',
       text: '在GitHub上编辑此页'
     },
+
+    docFooter: {
+      prev: "上一页",
+      next: "下一页"
+    },
+
+    returnToTopLabel: "返回顶部",
+
+    search: {
+      provider: "local"
+    },
   }
-};
+});
