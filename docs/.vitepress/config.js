@@ -65,7 +65,7 @@ export default defineConfig({
     search: {
       provider: "local"
     },
+  },
 
-    base: "/js-ss"
-  }
+  base: "/js-ss"
 });
