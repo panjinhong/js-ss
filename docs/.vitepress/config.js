@@ -42,7 +42,7 @@ export default defineConfig({
       'link', {
         rel: "icon",
         type: "image/png",
-        href: "https://github.com/panjinhong/js-ss/blob/master/docs/assets/logo.png"
+        href: "https://raw.githubusercontent.com/panjinhong/js-ss/master/docs/assets/logo.png"
       },
     ]
   ],
