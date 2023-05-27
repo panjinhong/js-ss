@@ -33,7 +33,10 @@ export default defineConfig({
   cleanUrls: true,
 
   markdown: {
-    theme: "vitesse-dark",
+    theme: {
+      light: "vitesse-light",
+      dark: "vitesse-dark",
+    },
     lineNumbers: true,
   },
 
