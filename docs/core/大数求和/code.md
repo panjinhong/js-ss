@@ -1,4 +1,4 @@
-# 大数加法
+# 大数求和
 
 ```javascript
 function largeNumberAdd(a, b) {
